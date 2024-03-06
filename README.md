@@ -47,6 +47,30 @@ git reflog
 git reset <commit_hash> 
 
 
+*#4 Submodules: Git repo inside a git repo*  
+
+Use it to download third party lib and keep it separated from your own code
+
+*#5 Search & find:*
+
+Filtering your commit history: 
+
+*by date --before / --after:* git log --after="2024-7-1" 
+
+*Also we can combine:* git log --after="2024-7-1" --before="2024-7-5" 
+
+*by message --grep:* git log --grep="refactor" 
+
+*by author --author:* git log --grep="author_name" --before="2024-7-5"    
+
+*by file --<filename>:* git log -- <file-name>
+
+*by branch <branch-A>:* git log <branch-name>..main
+
+
+
+
+
 
 
 
