@@ -16,12 +16,15 @@ c1 --------- c3 ---------- c2 (Branch-A)
 Eg. if we commit to the wrong branch: 
 
 *Step 1: Checkout to the branch*
+
 git checkout <branch-name>
 
 *Step 2: got to the particular commit*
+
 git cherry-pick <commit-hash>
 
 To cleanUp the master Branch:
+
 *Step 1:*
 git checkout <master_branch>
 
@@ -32,13 +35,18 @@ git reset --hard HEAD ~1  // This will cleanUp the last commit
 *#3 Reflog: A protocol of Head movement pointers*
 
 *To remove last commits and a particular commit the last one:*
+
 git reset --hard <commit_hash>
 
 *Now to get back those deleted commits, we get into:*
+
 git reflog
 
 *To undo the last action:*
+
 git reset <commit_hash> 
+
+
 
 
 
